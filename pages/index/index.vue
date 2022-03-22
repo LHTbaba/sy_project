@@ -1,5 +1,5 @@
 <template>
-	<view class="" style="background: #FAFAFA;width: 100vw;height: 100vh;" id="wrap">
+	<view class="" style="background: #ffffff;width: 100vw;height: 100vh;" id="wrap">
 		<uni-header id='header'>
 			<view slot="header_left" style="font-size:34rpx;">
 				<image src="../../static/img/sybt.png" style="width: 256rpx;height: 48rpx;margin-left: -10rpx;" mode=""></image>
@@ -12,98 +12,53 @@
 				<text class="admin_text">{{citydata}}</text>
 				<!-- <button style="font-size: 24rpx;" type="default" @click="openDY()">点我订阅</button> -->
 			</view>
-			<view class="admin_right" @click="toUser()">
+			<view class="admin_right">
 				{{weather}}
 			</view>
 		</view>
 		<view class="msg_box" id="msg_box" @click="toMsg()">
-			<view class="admin_left">
-				<text class="admin_text" style="color: rgb(38, 51, 67);font-weight: bold;">消息提醒</text>
-				<!-- <button style="font-size: 24rpx;" type="default" @click="openDY()">点我订阅</button> -->
+			<view class="msg_left">
+				<text class="msg_text">您有预警信息待查看</text>
 			</view>
-			<view class="admin_right">
-				您有入户核查任务待审批<icon class="iconfont iconzuojiantou" style="font-size: 30rpx;transform: rotate(180deg);color: rgb(162, 174, 191);margin-top: 20rpx;"></icon>
+			<view class="msg_right">
+				<icon class="iconfont iconzuojiantou" style="font-size: 30rpx;transform: rotate(180deg);margin-top: 20rpx;"></icon>
 			</view>
 		</view>
 		<scroll-view :style="{height:scrollerHeight}" scroll-y="auto">
 			<view class="main" style="background: #fff;">
 				<view class="menu_list">
-					<view class="menu_item menu_item1" @click="zfsb()" v-if="menuList.includes('20211013092753828A20200000053702')">
-						<view class="menu_top">
-							<text class="menu_h3">走访上报</text>
-							<image src="../../static/img/sy_right1.png" class="sy_right" mode="" ></image>
-						</view>
-						<view class="menu_bottom">
-							市干部走访上报
-						</view>
-						<image class="bottom_bg" src="../../static/img/sfsb.png" mode="" style="width: 70rpx;height: 70rpx;right: 10rpx;"></image>
+					<view class="menu_item menu_item01" @click="rhhs()" v-if="menuList.includes('20211013092753828A20200000053701')">
+						<text class="menu_h3">入户核实</text>
 					</view>
-					<view class="menu_item menu_item2" @click="rhhs()" v-if="menuList.includes('20211013092753828A20200000053701')">
-						<view class="menu_top">
-							<text class="menu_h3">入户核实</text>
-							<image src="../../static/img/sy_right2.png" class="sy_right" mode=""></image>
-						</view>
-						<view class="menu_bottom">
-							干部入户核实情况
-						</view>
-						<image class="bottom_bg" src="../../static/img/rhhs.png" mode=""></image>
+					<view class="menu_item menu_item02" @click="srjc()" v-if="menuList.includes('20211013092753828A20200000053704')">
+						<text class="menu_h3">户信息查询</text>
 					</view>
-					<view class="menu_item menu_item3" @click="srjc()" v-if="menuList.includes('20211013092753828A20200000053704')">
-						<view class="menu_top">
-							<text class="menu_h3">收入监测</text>
-							<image src="../../static/img/sy_right3.png" class="sy_right" mode=""></image>
-						</view>
-						<view class="menu_bottom">
-							农户收入情况监测
-						</view>
-						<image class="bottom_bg" src="../../static/img/srjc.png" mode=""></image>
+					<view class="menu_item menu_item03" @click="jcdx()" v-if="menuList.includes('20211013092753828A20200000053703')">
+						<text class="menu_h3">措施差异</text>
 					</view>
-					<view class="menu_item menu_item4" @click="jcdx()" v-if="menuList.includes('20211013092753828A20200000053703')">
-						<view class="menu_top">
-							<text class="menu_h3">监测对象</text>
-							<image src="../../static/img/sy_right4.png" class="sy_right" mode=""></image>
-						</view>
-						<view class="menu_bottom">
-							监测对象功能介绍
-						</view>
-						<image class="bottom_bg" src="../../static/img/jcdx.png" mode=""></image>
-					</view>
-					<view class="menu_item menu_item2" @click="tphxx()" v-if="menuList.includes('20211013092753828A20200000053706')">
-						<view class="menu_top">
-							<text class="menu_h3">脱贫户</text>
-							<image src="../../static/img/sy_right2.png" class="sy_right" mode=""></image>
-						</view>
-						<view class="menu_bottom">
-							脱贫户信息
-						</view>
-						<image class="bottom_bg" src="../../static/img/rhhs.png" mode=""></image>
+					<view class="menu_item menu_item04" @click="tphxx()" v-if="menuList.includes('20211013092753828A20200000053706')">
+						<text class="menu_h3">帮扶走访</text>
 					</view>
 				</view>
-				<!-- <view class="top_title">
-					<image src="../../static/img/banner.png" style="width: 100%;height: 100%;"></image>
-
-				</view> -->
 				<view class="tj_title">
-					统计分析
+					数据统计
 				</view>
-				<view class="zfsb_box" @click="bdzfsbtj()"  v-if="menuList.includes('20211013092753828A20200000053707')">
+				<view class="zfsb_box" @click="slrqtj()" v-if="menuList.includes('20211013092753828A20200000053708')">
 					<view class="tabview_left">
 						<image src="../../static/img/sbtj.png" style="width: 100rpx;height: 100rpx;margin-right: 26rpx;"></image>
 						<view class="tab_left">
-							<text class="strong_title">防返贫数据统计</text>
-							<text class="hui_title">防返贫数据统计</text>
+							<text class="strong_title">三类人群数据统计</text>
 						</view>
 					</view>
 					<view class="tabview_right">
 						<image src="../../static/img/icons-arrow.png" mode="" style="width: 30rpx;height: 30rpx;"></image>
 					</view>
 				</view>
-				<view class="zfsb_box" @click="slrqtj()" v-if="menuList.includes('20211013092753828A20200000053708')">
+				<view class="zfsb_box" @click="bdzfsbtj()"  v-if="menuList.includes('20211013092753828A20200000053707')">
 					<view class="tabview_left">
-						<image src="../../static/img/sbtj.png" style="width: 100rpx;height: 100rpx;margin-right: 26rpx;"></image>
+						<image src="../../static/img/list02.png" style="width: 100rpx;height: 100rpx;margin-right: 26rpx;"></image>
 						<view class="tab_left">
-							<text class="strong_title">三类人群数据</text>
-							<text class="hui_title">三类人群数据统计</text>
+							<text class="strong_title">防贫监测数据调度</text>
 						</view>
 					</view>
 					<view class="tabview_right">
@@ -112,10 +67,9 @@
 				</view>
 				<view class="zfsb_box" @click="qqsydbtj()" v-if="menuList.includes('20211013092753828A20200000053709')">
 					<view class="tabview_left">
-						<image src="../../static/img/hstj.png" style="width: 100rpx;height: 100rpx;margin-right: 26rpx;"></image>
+						<image src="../../static/img/list03.png" style="width: 100rpx;height: 100rpx;margin-right: 26rpx;"></image>
 						<view class="tab_left">
-							<text class="strong_title">七清四严督办</text>
-							<text class="hui_title">七清四严督办统计</text>
+							<text class="strong_title">三线预警数据统计</text>
 						</view>
 					</view>
 					<view class="tabview_right">
@@ -125,10 +79,9 @@
 				</view>
 				<view class="zfsb_box" @click="qqsydbjg()" v-if="menuList.includes('20211013092753828A20200000053710')">
 					<view class="tabview_left">
-						<image src="../../static/img/fltj.png" style="width: 100rpx;height: 100rpx;margin-right: 26rpx;"></image>
+						<image src="../../static/img/list04.png" style="width: 100rpx;height: 100rpx;margin-right: 26rpx;"></image>
 						<view class="tab_left">
-							<text class="strong_title">七清四严督办结果</text>
-							<text class="hui_title">七清四严督办结果统计</text>
+							<text class="strong_title">入户核实审核数据</text>
 						</view>
 					</view>
 					<view class="tabview_right">
@@ -136,24 +89,22 @@
 						<image src="../../static/img/icons-arrow.png" mode="" style="width: 30rpx;height: 30rpx;"></image>
 					</view>
 				</view>
-				<!-- <view class="zfsb_box" @click="sjtj()">
+				<view class="zfsb_box" @click="srjctj()" v-if="menuList.includes('20211013092753828A20200000053711')">
 					<view class="tabview_left">
-						<image src="../../static/img/wcjtj.png" style="width: 104rpx;height: 104rpx;margin-right: 26rpx;"></image>
+						<image src="../../static/img/list05.png" style="width: 100rpx;height: 100rpx;margin-right: 26rpx;"></image>
 						<view class="tab_left">
-							<text class="strong_title">未采集统计</text>
-							<text class="hui_title">未采集数据预警统计</text>
+							<text class="strong_title">帮扶措施数据</text>
 						</view>
 					</view>
 					<view class="tabview_right">
-						<image src="../../static/img/icons-arrow.png" mode="" style="width: 36rpx;height: 36rpx;"></image>
+						<image src="../../static/img/icons-arrow.png" mode="" style="width: 30rpx;height: 30rpx;"></image>
 					</view>
-				</view> -->
+				</view>
 				<view class="zfsb_box" @click="srjctj()" v-if="menuList.includes('20211013092753828A20200000053711')">
 					<view class="tabview_left">
-						<image src="../../static/img/dsrtj.png" style="width: 100rpx;height: 100rpx;margin-right: 26rpx;"></image>
+						<image src="../../static/img/list06.png" style="width: 100rpx;height: 100rpx;margin-right: 26rpx;"></image>
 						<view class="tab_left">
-							<text class="strong_title">收入监测数据</text>
-							<text class="hui_title">低收入信息预警统计</text>
+							<text class="strong_title">帮扶工作统计</text>
 						</view>
 					</view>
 					<view class="tabview_right">
@@ -242,7 +193,7 @@
 		},
 		methods: {
 			toWode() {
-				this.openDY();
+				// this.openDY();
 				uni.redirectTo({
 					url: '../user/user'
 				})
@@ -876,7 +827,7 @@
 			height: 40%;
 			margin: auto;
 			width: 10rpx;
-			background: linear-gradient(92.55deg, #FF5CC476 0%, #FF50B184 100%);
+			background: #46A496;
 		}
 	}
 
@@ -884,101 +835,65 @@
 		overflow: hidden;
 
 		.menu_item {
+			width: calc((100% - 30rpx) / 2);
 			height: 200rpx;
-			padding: 30rpx;
+			padding-top: 60rpx;
+			padding-left: 24rpx;
 			position: relative;
 			box-sizing: border-box;
 			float: left;
 			margin-bottom: 30rpx;
 			margin-right: 30rpx;
 			border-radius: 16rpx;
-
+			font-size: 30rpx;
+			color: #46A496;
+			font-weight: bold;
 			&:nth-child(2n) {
 				margin-right: 0px;
 			}
-
-			;
-			width: calc((100% - 30rpx) / 2);
-
-			.menu_top {
-				margin-bottom: 30rpx;
-				font-size: 32rpx;
-
-				.sy_right {
-					width: 40rpx;
-					margin-top: 30rpx;
-					margin-left: 20rpx;
-					height: 30rpx;
-				}
-			}
-
-			.menu_bottom {
-				color: rgb(162, 174, 191);
-				font-size: 24rpx;
-			}
-
-			.bottom_bg {
-				position: absolute;
-				width: 50rpx;
-				height: 50rpx;
-				bottom: 30rpx;
-				right: 30rpx;
-			}
 		}
-
-		.menu_item1 {
-			background: rgba(250, 251, 255, 1);
-
-			.menu_top {
-				color: rgb(22, 41, 119);
-			}
+		.menu_item01 {
+			background: url('../../static/img/menu_item01.png') no-repeat center/cover;
 		}
-
-		.menu_item2 {
-			background: rgb(247, 253, 253);
-
-			.menu_top {
-				color: rgb(63, 109, 109);
-			}
+		.menu_item02 {
+			background: url('../../static/img/menu_item02.png') no-repeat center/cover;
 		}
-
-		.menu_item3 {
-			background: rgb(251, 251, 239);
-
-			.menu_top {
-				color: rgb(101, 101, 35);
-			}
+		.menu_item03 {
+			background: url('../../static/img/menu_item03.png') no-repeat center/cover;
 		}
-
-		.menu_item4 {
-			background: rgb(255, 249, 249);
-
-			.menu_top {
-				color: rgb(128, 35, 35);
-			}
+		.menu_item04 {
+			background: url('../../static/img/menu_item04.png') no-repeat center/cover;
 		}
 	}
 
 	.msg_box {
-		width: 100%;
+		width: 90%;
 		box-sizing: border-box;
-		padding: 0px 30rpx;
-		background: #fff;
-		height: 80rpx;
-		// box-shadow: 0px 1px 4px 0px #000000;
+		margin: 30rpx auto;
+		background: url('../../static/img/msg_box.png') no-repeat center/cover;
+		height: 65rpx;
 		color: #333333;
 		font-family: HappyZcool-2016;
 		display: flex;
 		font-size: 30rpx;
 		justify-content: space-between;
 		align-items: center;
+		.msg_left {
+			margin-left: 100rpx;
+			font-size: 24rpx;
+			color: #F58F33;
+		}
+		.msg_right {
+			font-size: 26rpx;
+			color: #F58F33;
+		}
 	}
 
 	.admin_box {
 		width: 100%;
 		box-sizing: border-box;
 		padding: 0px 30rpx;
-		background: linear-gradient(92.55deg, #FF5CC476 0%, #FF50B184 100%);
+		background: linear-gradient(92.55deg, #5cc376 0%, #51b383 100%);
 		height: 80rpx;
 		display: flex;
 		justify-content: space-between;
@@ -1035,13 +950,14 @@
 			position: relative;
 			z-index: 2;
 			background: #fff;
-			padding: 50rpx 30rpx;
-			border-radius: 16rpx;
+			padding: 30rpx 30rpx;
+			border-radius: 30rpx;
 			overflow: hidden;
 			display: flex;
 			margin-bottom: 30rpx;
 			justify-content: space-between;
-			box-shadow: 0px 0.5px 2px 0px rgba(96, 99, 103, .18);
+			box-shadow: 0px 0.67px 2.67px 0px #dddddd;
+
 
 			&:last-child {
 				margin-bottom: 0px;
@@ -1059,12 +975,7 @@
 						font-size: 32rpx;
 						font-weight: bold;
 						margin-bottom: 10rpx;
-						color: #424242;
-					}
-
-					.hui_title {
-						color: #bfbfbf;
-						font-size: 28rpx;
+						color: #192321;
 					}
 				}
 			}

@@ -528,9 +528,9 @@
 					height: 50rpx;
 					padding: 0px 10rpx;
 					font-size: 28rpx;
-					border: 1px solid rgb(87, 107, 222);
+					border: 1px solid linear-gradient(92.55deg, #5cc376 0%, #51b383 100%);
 					background: rgba(191, 191, 191, .1);
-					color: rgb(87, 107, 222);
+					color: linear-gradient(92.55deg, #5cc376 0%, #51b383 100%);
 					border-radius: 3px;
 				}
 

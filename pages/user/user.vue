@@ -22,7 +22,7 @@
 				<!-- <view class="msg_box">
 					<view class="msg_list">
 						<view class="msg_item">
-							<view class="msg_num" style="color: rgb(87, 107, 222);">
+							<view class="msg_num" style="color: linear-gradient(92.55deg, #5cc376 0%, #51b383 100%);">
 								2
 							</view>
 							<text class="msg_hui">待办任务</text>
@@ -77,14 +77,14 @@
 							<icon class="iconfont iconzuojiantou" slot="header_left" style="font-size: 32rpx;transform: rotate(180deg);color: #9E9FA4;margin-top: 20rpx;"></icon>
 						</view>
 					</view> 
-					<view class="user_card">
+					<!-- <view class="user_card">
 						<view class="user_card_left">
 							您的消息提醒还剩<text style="color: #ED6A5E;">{{nums}}</text>条
 						</view>
 						<view class="user_card_right">
 							<text class="dyBtn" @click="addDy">订阅</text>
 						</view>
-					</view>
+					</view> -->
 				</view> 
 			</scroll-view>
 			<view class="tabber" id="tabber">
@@ -365,7 +365,7 @@
 	}
      .user_box{
 		 padding: 50rpx 30rpx 30rpx 30rpx;
-		 background: rgb(87, 107, 222);
+		 background: linear-gradient(92.55deg, #5cc376 0%, #51b383 100%);
 		 display: flex;
 		 justify-content: space-between;
 		 align-items: center;
@@ -389,7 +389,7 @@
 			 padding: 0px 20rpx;
 			 font-size: 30rpx;
 			 color: #fff;
-			 background: rgb(59, 143, 242);
+			 background: #F8C55E;
 		 }
 	 }
 	 

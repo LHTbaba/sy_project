@@ -162,7 +162,7 @@
 			height: 40%;
 			margin: auto;
 			width: 10rpx;
-			background: rgb(87, 107, 222);
+			background: linear-gradient(92.55deg, #5cc376 0%, #51b383 100%);
 		}
 	}
 
@@ -264,7 +264,7 @@
 		width: 100%;
 		box-sizing: border-box;
 		padding: 0px 30rpx;
-		background: rgb(87, 107, 222);
+		background: linear-gradient(92.55deg, #5cc376 0%, #51b383 100%);
 		height: 80rpx;
 		display: flex;
 		justify-content: space-between;

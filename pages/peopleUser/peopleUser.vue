@@ -22,7 +22,7 @@
 				<!-- <view class="msg_box">
 					<view class="msg_list">
 						<view class="msg_item">
-							<view class="msg_num" style="color: rgb(87, 107, 222);">
+							<view class="msg_num" style="color: linear-gradient(92.55deg, #5cc376 0%, #51b383 100%);">
 								2
 							</view>
 							<text class="msg_hui">我的申报</text>
@@ -363,7 +363,7 @@
 	}
      .user_box{
 		 padding: 50rpx 30rpx 50rpx 30rpx;
-		 background: rgb(87, 107, 222);
+		 background: linear-gradient(92.55deg, #5cc376 0%, #51b383 100%);
 		 display: flex;
 		 justify-content: space-between;
 		 align-items: center;

@@ -629,7 +629,7 @@
 
 			.nums_strong {
 				font-size: 32rpx;
-				color: rgb(87, 107, 222);
+				color: linear-gradient(92.55deg, #5cc376 0%, #51b383 100%);
 				margin-right: 10rpx;
 			}
 		}
@@ -852,7 +852,7 @@
 		box-sizing: border-box;
 		background: rgba(87, 107, 222, 0.1);
 		border-radius: 8rpx;
-		color: rgb(87, 107, 222);
+		color: linear-gradient(92.55deg, #5cc376 0%, #51b383 100%);
 	}
 
 	.uploads_box {
@@ -1239,9 +1239,9 @@
 					height: 50rpx;
 					padding: 0px 10rpx;
 					font-size: 28rpx;
-					border: 1px solid rgb(87, 107, 222);
+					border: 1px solid linear-gradient(92.55deg, #5cc376 0%, #51b383 100%);
 					background: rgba(191, 191, 191, .1);
-					color: rgb(87, 107, 222);
+					color: linear-gradient(92.55deg, #5cc376 0%, #51b383 100%);
 					border-radius: 3px;
 				}
 
