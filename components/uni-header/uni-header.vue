@@ -47,7 +47,7 @@
 	z-index: 999;
   	justify-content: space-between;
 	align-items: center;
-  	background:rgb(87, 107, 222);
+  	background:linear-gradient(92.55deg, #5cc376 0%, #51b383 100%);
 	font-family: HappyZcool-2016;
      font-weight: medium;
   	// border-bottom: 1px solid #dfdfdf;

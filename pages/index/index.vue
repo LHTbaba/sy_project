@@ -2,7 +2,7 @@
 	<view class="" style="background: #FAFAFA;width: 100vw;height: 100vh;" id="wrap">
 		<uni-header id='header'>
 			<view slot="header_left" style="font-size:34rpx;">
-				<image src="../../static/img/sybt.png" style="width: 240rpx;height: 60rpx;margin-left: -10rpx;" mode=""></image>
+				<image src="../../static/img/sybt.png" style="width: 256rpx;height: 48rpx;margin-left: -10rpx;" mode=""></image>
 			</view>
 		</uni-header>
 		<view class="admin_box" id="admin_box">
@@ -79,10 +79,10 @@
 						<image class="bottom_bg" src="../../static/img/rhhs.png" mode=""></image>
 					</view>
 				</view>
-				<view class="top_title">
+				<!-- <view class="top_title">
 					<image src="../../static/img/banner.png" style="width: 100%;height: 100%;"></image>
 
-				</view>
+				</view> -->
 				<view class="tj_title">
 					统计分析
 				</view>
@@ -876,7 +876,7 @@
 			height: 40%;
 			margin: auto;
 			width: 10rpx;
-			background: rgb(87, 107, 222);
+			background: linear-gradient(92.55deg, #FF5CC476 0%, #FF50B184 100%);
 		}
 	}
 
@@ -978,7 +978,7 @@
 		width: 100%;
 		box-sizing: border-box;
 		padding: 0px 30rpx;
-		background: rgb(87, 107, 222);
+		background: linear-gradient(92.55deg, #FF5CC476 0%, #FF50B184 100%);
 		height: 80rpx;
 		display: flex;
 		justify-content: space-between;

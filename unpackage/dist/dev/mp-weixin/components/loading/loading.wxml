@@ -1,1 +1,0 @@
-<block wx:if="{{loadingShow}}"><view class="request-loading-view data-v-e4cdeb04"><view class="loading-view data-v-e4cdeb04"><view class="loading data-v-e4cdeb04"></view></view></view></block>

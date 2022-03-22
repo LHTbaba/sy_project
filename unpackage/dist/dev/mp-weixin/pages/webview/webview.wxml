@@ -1,1 +1,0 @@
-<view style="width:100vw;height:100vh;" id="wrap" class="data-v-baadaa0c"><scroll-view class="main data-v-baadaa0c vue-ref" style="{{'height:'+(scrollerHeight)+';'}}" show-scrollbar="false" scroll-y="true" data-ref="main"><web-view src="{{url}}" class="data-v-baadaa0c"></web-view></scroll-view></view>

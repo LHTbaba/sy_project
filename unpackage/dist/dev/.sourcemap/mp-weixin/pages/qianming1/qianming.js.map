@@ -1,1 +1,0 @@
-{"version":3,"sources":["uni-app:///main.js"],"names":["createPage","Page"],"mappings":";;;;;;;;;;kDAAA;AACA;AACA,wN;AACAA,UAAU,CAACC,iBAAD,CAAV,C","file":"./pages/qianming1/qianming.js","sourcesContent":["import 'uni-pages';\nimport Vue from 'vue'\nimport Page from '././pages/qianming1/qianming.vue'\ncreatePage(Page)"],"sourceRoot":""}
