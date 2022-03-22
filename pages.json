@@ -1,0 +1,413 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+		    "path" : "pages/index/index",
+		    "style": {
+		    	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		    	/* */"app-plus": {
+		    		"titleNView": false //去掉app+h5顶部导航
+		    	}
+		    }
+		}, 
+		{
+		    "path" : "pages/msgList/msgList",
+		    "style": {
+		    	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		    	"app-plus": {
+		    		"titleNView": false //去掉app+h5顶部导航
+		    	}
+		    }
+		},	
+		{
+		    "path" : "pages/msgList/msgListDetail",
+		    "style": {
+		    	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		    	"app-plus": {
+		    		"titleNView": false //去掉app+h5顶部导航
+		    	}
+		    }
+		},	
+		
+		{
+		    "path" : "pages/peopleUser/peopleUser",
+		    "style": {
+		    	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		    	"app-plus": {
+		    		"titleNView": false //去掉app+h5顶部导航
+		    	}
+		    }
+		},	
+		
+		{
+		    "path" : "pages/fankui/fankui",
+			 
+		    "style": {
+		    	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		    	/* */"app-plus": {
+		    		"titleNView": false //去掉app+h5顶部导航
+		    	}
+		    }
+		}, 
+		
+		{
+		    "path" : "pages/kefu/kefu",
+			 
+		    "style": {
+		    	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		    	/* */"app-plus": {
+		    		"titleNView": false //去掉app+h5顶部导航
+		    	}
+		    }
+		}, 
+		
+		
+		
+		{
+		     "path" : "pages/qianming1/qianming1",
+		     "style": {
+		     	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		     	"app-plus": {
+		     		"titleNView": false //去掉app+h5顶部导航
+		     	} 
+		     }   
+		},	
+	
+		 
+		{
+		    "path" : "pages/peopleLogin/peopleLogin",
+		    "style": {
+		    	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		    	"app-plus": {
+		    		"titleNView": false //去掉app+h5顶部导航
+		    	}
+		    }
+		},	
+		
+		{
+		    "path" : "pages/peopleIndex/peopleIndex",
+		    "style": {
+		    	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		    	"app-plus": {
+		    		"titleNView": false //去掉app+h5顶部导航
+		    	}
+		    }
+		},	
+		{
+		     "path" : "pages/yjjcReport/yjjcReport",
+		     "style": {
+		     	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		     	"app-plus": {
+		     		"titleNView": false //去掉app+h5顶部导航
+		     	} 
+		     }   
+		},	
+		
+		
+		{
+		    "path" : "pages/rhhsUpdate/rhhsUpdate",
+		    "style": {
+		    	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		    	"app-plus": {
+		    		"titleNView": false //去掉app+h5顶部导航
+		    	}
+		    }
+		},	
+		{
+		    "path" : "pages/rhhsMenu/rhhsMenu",
+		    "style": {
+		    	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		    	"app-plus": {
+		    		"titleNView": false //去掉app+h5顶部导航
+		    	}
+		    }
+		},	
+		{
+		    "path" : "pages/hstjList/hstjList",
+		    "style": {
+		    	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		    	"app-plus": {
+		    		"titleNView": false //去掉app+h5顶部导航
+		    	}
+		    }
+		},	
+		{
+		    "path" : "pages/rhhsList/rhhsList",
+		    "style": {
+		    	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		    	"app-plus": {
+		    		"titleNView": false //去掉app+h5顶部导航
+		    	}
+		    }
+		},
+		{
+		    "path" : "pages/user/user",
+		    "style": {
+		    	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		    	"app-plus": {
+		    		"titleNView": false //去掉app+h5顶部导航
+		    	}
+		    }
+		},	
+	
+		{
+		    "path" : "pages/login/login",
+		    "style": {
+					"navigationBarTitleText": "首页"
+		    }
+		},	
+	
+	
+		
+		{
+		    "path" : "pages/people/people",
+		    "style": {
+		    	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		    	"app-plus": {
+		    		"titleNView": false //去掉app+h5顶部导航
+		    	}
+		    }
+		},	
+		
+		
+	
+		
+		{
+		    "path" : "pages/msgList/msgListDetailCopy",
+		    "style": {
+		    	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		    	"app-plus": {
+		    		"titleNView": false //去掉app+h5顶部导航
+		    	}
+		    }
+		},	
+		
+		
+		
+		{
+		    "path" : "pages/yjjcList/yjjcList",
+		    "style": {
+		    	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		    	"app-plus": {
+		    		"titleNView": false //去掉app+h5顶部导航
+		    	} 
+		    }  
+		},	 
+		
+		{
+		    "path" : "pages/srcjDetail/srcjDetail",
+		    "style": {
+		    	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		    	"app-plus": {
+		    		"titleNView": false //去掉app+h5顶部导航
+		    	}
+		    }
+		},
+		{
+		    "path" : "pages/srcj/srcj",
+		    "style": {
+		    	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		    	"app-plus": {
+		    		"titleNView": false //去掉app+h5顶部导航
+		    	}
+		    }
+		},
+		
+		{
+		    "path" : "pages/zfsbReport/zfsbReport",
+		    "style": {
+		    	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		    	"app-plus": {
+		    		"titleNView": false //去掉app+h5顶部导航
+		    	}
+		    }
+		},	
+		{
+		    "path" : "pages/yjjcDetail/yjjcDetail",
+		    "style": {
+		    	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		    	"app-plus": {
+		    		"titleNView": false //去掉app+h5顶部导航
+		    	} 
+		    }   
+		},	 
+		
+		
+		{
+		    "path" : "pages/camera/camera",
+		    "style": {
+		    	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		    	"app-plus": {
+		    		"titleNView": false //去掉app+h5顶部导航
+		    	}
+		    }
+		},
+		
+		
+		
+		{
+		    "path" : "pages/zfsbSearch/zfsbSearch",
+		    "style": {
+		    	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		    	"app-plus": {
+		    		"titleNView": false //去掉app+h5顶部导航
+		    	}
+		    }
+		},	
+		
+		
+		
+		
+		{
+		    "path" : "pages/aboutUs/aboutUs",
+		    "style": {
+		    	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		    	"app-plus": {
+		    		"titleNView": false //去掉app+h5顶部导航
+		    	}
+		    }
+		},	
+	
+		{
+			"path" : "pages/pswUpdate/pswUpdate",
+			"style": {
+				"navigationStyle": "custom", // 去掉微信小程序顶部导航
+				"app-plus": {
+					"titleNView": false //去掉app+h5顶部导航
+				}
+			}
+		},		
+		
+		
+		{
+		    "path" : "pages/yjjcDetail2/yjjcDetail",
+		    "style": {
+		    	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		    	"app-plus": {
+		    		"titleNView": false //去掉app+h5顶部导航
+		    	} 
+		    }   
+		}, 
+		{
+		    "path" : "pages/rhhsDetail/rhhsDetail",
+		    "style": {
+		    	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		    	"app-plus": {
+		    		"titleNView": false //去掉app+h5顶部导航
+		    	}
+		    }
+		},	
+		
+		
+		{
+		     "path" : "pages/yjjcReport2/yjjcReport",
+		     "style": {
+		     	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		     	"app-plus": {
+		     		"titleNView": false //去掉app+h5顶部导航
+		     	} 
+		     }   
+	    },	   
+		
+		{
+		     "path" : "pages/qianming/qianming",
+		     "style": {
+		     	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		     	"app-plus": {
+		     		"titleNView": false //去掉app+h5顶部导航
+		     	} 
+		     }   
+		},	
+		
+	
+		
+		
+		
+		
+		
+		
+		{
+		    "path" : "pages/webview/webview",
+		    "style": { 
+		    	"app-plus": {
+		    		"titleNView": false //去掉app+h5顶部导航
+		    	} 
+		    }   
+		},	 
+		
+		{
+		     "path" : "pages/tjDetail/tjDetail",
+		     "style": {
+		     	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		     	"app-plus": {
+		     		"titleNView": false //去掉app+h5顶部导航
+		     	} 
+		     }  
+		},	 
+		
+		{
+		    "path" : "pages/rsearch/rsearch",
+		    "style": {
+		    	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		    	"app-plus": {
+		    		"titleNView": false //去掉app+h5顶部导航
+		    	} 
+		    }  
+		},	 
+		{
+		    "path" : "pages/jsearch/jsearch",
+		    "style": {
+		    	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		    	"app-plus": {
+		    		"titleNView": false //去掉app+h5顶部导航
+		    	} 
+		    }  
+		},	
+		{
+		     "path" : "pages/sjtjList/sjtjList",
+		     "style": {
+		     	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		     	"app-plus": {
+		     		"titleNView": false //去掉app+h5顶部导航
+		     	} 
+		     }  
+        },	 
+		
+		 
+		{
+		    "path" : "pages/yjjcUpdate/yjjcUpdate",
+		    "style": {
+		    	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		    	"app-plus": {
+		    		"titleNView": false //去掉app+h5顶部导航
+		    	} 
+		    }  
+		}, 
+		
+		
+		{
+		    "path" : "pages/zfsbpage/zfsbpage",
+		    "style": {
+		    	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		    	"app-plus": {
+		    		"titleNView": false //去掉app+h5顶部导航
+		    	}
+		    }
+		},
+		{
+		    "path" : "pages/export/export",
+		    "style": {
+		    	"navigationStyle": "custom", // 去掉微信小程序顶部导航
+		    	"app-plus": {
+		    		"titleNView": false //去掉app+h5顶部导航
+		    	}
+		    }
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"renderingMode": "seperated"
+	}
+}

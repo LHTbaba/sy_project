@@ -1,0 +1,205 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.mask.data-v-6acf4f66 {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  background: rgba(0, 0, 0, 0.5);
+}
+.sfts_box.data-v-6acf4f66 {
+  position: fixed;
+  width: 85%;
+  height: 634rpx;
+  background: #fff;
+  border-radius: 12rpx;
+  box-sizing: border-box;
+  /*padding: .4rem;*/
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+  left: 0;
+  margin: auto;
+}
+.sfts_box .sf_logo.data-v-6acf4f66 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+.sfts_box .sf_logo .sfspan.data-v-6acf4f66 {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #000;
+  opacity: .9;
+}
+.sfts_box .text_sm.data-v-6acf4f66 {
+  margin-top: 30rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #000;
+  opacity: .5;
+  line-height: 50rpx;
+  margin-bottom: 30rpx;
+}
+.sfts_box .sf_btn.data-v-6acf4f66 {
+  width: 100%;
+  height: 100rpx;
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00B65A;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.login.data-v-6acf4f66 {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #FAFAFA;
+}
+#imgCanvas.data-v-6acf4f66 {
+  width: 190rpx;
+  height: 70rpx;
+}
+.top-img.data-v-6acf4f66 {
+  text-align: center;
+  margin: 3vh auto 3vh;
+}
+.top-img > .img.data-v-6acf4f66 {
+  display: inline-block;
+  width: 180rpx;
+  height: 180rpx;
+}
+.app-title.data-v-6acf4f66 {
+  font-family: PangMenZhengDao;
+  font-weight: bold;
+  font-size: 42rpx;
+  color: #313333;
+  text-align: center;
+  padding-top: 10rpx;
+  letter-spacing: 2px;
+}
+.login .main-item.data-v-6acf4f66 {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 100rpx;
+  margin: 30rpx auto 0;
+  padding: 0 30rpx;
+  background: #fff;
+  box-sizing: border-box;
+}
+.login .main-item.code.data-v-6acf4f66 {
+  position: relative;
+}
+.main-item .icon.data-v-6acf4f66 {
+  display: inline-block;
+  width: 48rpx;
+  height: 48rpx;
+}
+.login .main-item input.data-v-6acf4f66 {
+  font-size: 32rpx;
+  color: #000;
+  padding: 0 20rpx;
+  flex: 1;
+  box-sizing: border-box;
+}
+.main-item .name_icon.data-v-6acf4f66 {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASFSURBVHgBtVn/eeJGEB1wCiAdyGnApIJAGsCcCwip4HAFBykg5tKA8f+2MQ0EXQXmKjhdBUcF5t6Dkb7VaFdacdz7vv2EpN3ZNz92dlZ05ESsVqsBLldovPbRetqIHVrG9vb29rnb7abj8TiVE9Bp0xmkSOA92tQhE4sMLUWbg2wWOyiKoBL7oMTOgaVEEu02dViv17TYFzkfOWKCtnl+fv6rqWOtBWG5OwkTY5y9IMY+Ica2+J3BIjsdR4snaP39fj/odDojCYfEAuNupQ1BnWAlxwVgkYHQAsQeckIxgMyJHMMk8bymgkOfvBDBVzmuTBcczLhZyA8AsqdK1FqUK30oTQQDbs3kqGEmZwDmSHDZSNWaFXeXCD49PU3gvnsziOYfh8gxH8Ld1xg3cibcapvXjGNfhlHJU5B1e3Nzs6gQDGiVScByLVLPQonuAiTtnOx3mfcv0gxW20yqJq8jt5G41MM+Gx1TgsoeKqkcueJSEKQmSAWlnART1yVSCuhLPPriTOohOTePp7lCB4JqPRcZ4mDmE6hu8S4itF8xIcNmrM/spAPxk1zY/jDQtCAI6/3hvkTAzyQAnzJov7MYyOMG1xc+k+qk1xLGR8Ph/eGqWiXOu91oNHoISYEyV0bQ1LcA9Nnfpu9IwliKiUVy60Krgen4IvUoxR6UWdf03Zr7JNSRCsE7JVng1odSXWuRVFrAtzrdSaUFQDB17+GtAWMwcR+ywGyQk5n74Gp+fHy0MbeVGmjR4RK8qhD0ECgBCliX3vusyGcXFxd30oKgZ+4eCZaEN7kFWtoYTdBec2uRmC68V6kqP5caeObuNRasHiEprPjRkoS1wGu1x+9v4ikEOOaUYoMES6zrgr4YdMyTTe5ysa3LrTVz7yoEpSYV5FBXDD2WrED7DCNXdGLus1/kaInEEdiXCOvohNy+FtxdNIHnK5rHzTXjFVtmKpHQvFfcQ+5XEmRaKdIBOnDbW0bKzDf7iZwBzHvuPQhuSTc1/a5j4vBnQA9XBbhpHApWEOLKK0jZqjYE5yA/kGOYJPqK7meYMCWtY1avp5rnKfEyd7i3kqghlqAxlVCxmUMwR0+fUckv6HuvZVoQmNPWi+nhud5YayXQaOqRkx/kX8V/JA1hwjENMhPzeF4Q5Iq0KYMaWa0h6AP6UZlTYrQHmXeQWbIU7i8hc2b6LvOw6DqE2MmeDTY5SWrpEUSkrAnleNDpaEXNYpW1YObpP8stSXK4/C9lhfmZpdgSO0YbDvRt8DyrroygqIN84KDOse/Q/hVTDUHZiVswVw7u0G7RtEh0Au4OUdsdSJLERhpCg+GD7BE+uDsCKWwgYdy2/QQS8I6LDWT+aR+GqhmeytLAO2b4b9KOHC3HSie0H9Mg73wvaj+/Nbj78PmNZTp2gK/4vbWf33Rv5dbJrdTn3j2zh3VrNEGdbCLhz2Y/Anrhn6ZQaSxYIWCJyxCWepDzYK+59LeYOG77ET3R0opuSyKH7fVK9/8nx09sMbVhe4Iu9LPbQI+tibaeQ4YuZCX9iSfFU/+G+A70XTXOstO0bwAAAABJRU5ErkJggg==) no-repeat center/contain;
+}
+.main-item .password_icon.data-v-6acf4f66 {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAmCAYAAACsyDmTAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD8SURBVHgB7ZjRDYIwEIavxAEcwRFgExnBDXQSR2AEdAM30BHcQDao19IYUh5+ai/Qh/uSCyE08KUX/rQ1tIC+7w986bhqrj2lc+O6tG37RgMNGhBknn+KTBm4GiRVEeYqIEPhHR0atEToSHLUaMCOEuEph22ewi23k1s400tmaFVUCKFCCP/HCCRxLr8kN4JJnItPctcyqSTOxSe5E5JM4lzqWVKnJnEucZLrb49QIYQKIYoTgivGKCdmOZX7PEZbhihvPZTaY2ni72vLECqEUCFEkTn0oTJ2HR43Qy8qBGvt3QmdaNykbc1gjDlX4cyvoXE7u4kI14PC+eMXxHZF6Gm6mgEAAAAASUVORK5CYII=) no-repeat center/contain;
+}
+.main-item .code_icon.data-v-6acf4f66 {
+  width: 50rpx;
+  height: 52rpx;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACY0lEQVRYR+1X0XETQQx9qgBTgZ0KSCrAdBBdAzgVYCogVECoANLAKVRA0oE7wKkgUIGY59HOrNd35z3HJj/sjGdudryrJ+lJeit44SUvbB8HAzCzBYBPdMDdr5umuT3EmdEAMsOzwuD6ECBVAMxsAuADAHqdDNPj7wGC++/jex37t6rK78HVCcDMZu4+FZE5gHMAl9ktNHxdXs4z3M+A8Mg9f+5+LyKPXYB2AJgZvUrebOy6+4OI3NEzVf095FJEa+HuCxF5U/yX56/yvS4A7u6PIkIg9GC1z2gfoADDCM4D0FRVt2z2AXhomobhP9pq25ZpePsfwMkjYGbnqroqc/dPUpBV0EUJ4uQAknF3/yMis7JyTgqgMD4/SQqipn8C+KqqqQWjxjj58OwIRKv9FeS6Ioha40cBwEtiEn4LEOyS7HDMeWfY80qojkDbtmsReVLVi642mIOoNR4RYGlOmqbZGuM7rTghBfC6bwYQhLsvRWTRRbgSePDniUOtbPFds2AJ4AuATZ6PMQyyqH1U1Zt903Di7ikNZ8cAEGmdAjgrNUGfIKGwoN77rKr8PniZWbqLConKaWv1SrK2bVchKFRVKUZGrxT6vu7IC3sBcKiElHIA72rIliPkeQBsXNSTvXwaFKUFCBKoipThOYlM4zvEGyRhRwmlSLwCQAaTF526MMqN3GElce3lUK0sp0q+C07QOIlFUm2AhGEKWe6zitgdlzURqwKQomJmSz4+RITR4Np0t+ytQAX9I4zvfRMMkrCP8uHtJVUu3wwEE7KdYG5qHiOjODC69kYeGJWCkXdX/f0vnHW4MOy+naIAAAAASUVORK5CYII=) no-repeat left center/contain;
+}
+.verification-code.data-v-6acf4f66 {
+  display: flex;
+  align-items: center;
+}
+.verification-code input.data-v-6acf4f66 {
+  width: calc(100% - 160rpx);
+}
+.verification-code .img.data-v-6acf4f66 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 200rpx;
+  height: 100rpx;
+  border: 0;
+  border-radius: 0 200rpx 200rpx 0;
+}
+.login .button-box.data-v-6acf4f66 {
+  margin-top: 30rpx;
+}
+.login .button-box .login-btn.data-v-6acf4f66 {
+  width: 90%;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: linear-gradient(143.65deg, #446BCF 0%, #2A52BE 100%);
+  font-size: 32rpx;
+  color: #fff;
+}
+.checked-box.data-v-6acf4f66 {
+  width: 80%;
+  margin: 0 auto;
+  padding-left: 50rpx;
+}
+.login .keep-password.data-v-6acf4f66 {
+  color: #9E9FA4;
+  font-size: 28rpx;
+  padding-top: 26rpx;
+}
+/*checkbox 选项框大小  */
+checkbox .wx-checkbox-input.data-v-6acf4f66 {
+  width: 35rpx;
+  height: 35rpx;
+}
+/*checkbox选中后样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked.data-v-6acf4f66 {
+  background: #fff;
+}
+/*checkbox选中后图标样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked.data-v-6acf4f66::before {
+  width: 28rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #345BC4;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+

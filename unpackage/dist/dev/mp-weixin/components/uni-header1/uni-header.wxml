@@ -1,0 +1,1 @@
+<view class="header data-v-153c9fad" style="{{'padding-top:'+(barheight+'px')+';'}}" id="header"><view class="header_left data-v-153c9fad"><slot name="header_left"></slot></view><view class="header_middle data-v-153c9fad" style="{{'padding-top:'+(barheight+'px')+';'}}">{{''+title+''}}</view><view class="header_right data-v-153c9fad"><slot name="header_right"></slot></view></view>
