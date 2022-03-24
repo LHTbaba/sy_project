@@ -215,17 +215,18 @@
 	}
 
 	.page_box { 
+		position: fixed;
 		width: 100%;
 		box-sizing: border-box;
 		padding: 20rpx 40rpx;
 		background: #fff;
 		font-size: 30rpx;
 		display: flex;
-		bottom: 0;
+		bottom: 60rpx;
 
 		.prev_text {
 			flex: 1; 
-			background: #576bde;
+			background: #46A496;
 			display: flex;
 			color: #fff;
 			height: 88rpx;
@@ -480,10 +481,12 @@
 	}
 
 	.report_list {
+		background: #fafafa;
 		.report_item {
 			padding: 0rpx 40rpx 30rpx 40rpx;
-			margin-bottom: 12rpx;
-			background: #fff;
+			margin-bottom: 20rpx;
+			overflow: hidden;
+			background: #ffffff;
 
 			.report_h3 {
 				font-size: 32rpx;

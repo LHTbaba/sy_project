@@ -17,9 +17,9 @@
 								<view class="ms_text">
 									您有<text class="msg_h3">{{item.QNUM}}</text>条{{item.QNAME}}
 								</view>
-								<view class="ms_text">
+								<!-- <view class="ms_text">
 									 其中即将超时：<text class="msg_h3">{{item.NUM_1}}</text>条,已超时：<text class="msg_h3">{{item.NUM_2}}</text>条 
-								</view>
+								</view> -->
 								 
 							</view>
 							<text class="ms_handle" >

@@ -5,9 +5,17 @@
 				<icon class="iconfont iconzuojiantou" slot="header_left" style="font-size: 54rpx;color: #FFF;"  @click="back"></icon>
 			</uni-header>
 			<scroll-view :style="{height:scrollerHeight}">
-				<view class="" style="width: 100%;height: 480rpx;display: flex;align-items: center;justify-content: center;">
-					<image src="../../static/img/rxkj.png" mode="" style="width: 460rpx;height: 180rpx;"></image>
-				</view> 
+				<view class="content-about">
+					<view style="text-align: center">
+						<image src="../../static/img/fp_title.png" mode="" style="width: 200rpx;height: 200rpx;"></image>
+						<p style="font-size: 36rpx; color: #263343; font-weight: bold; line-height: 80rpx">防返贫监测</p>
+						<p style="color: #7D8288">版本号：syfpjc 1.0.0</p>
+					</view>
+					<view style="text-align: center;font-size:18.5rpx">
+						<p style="color: #A2AEBF">江西睿讯科技有限公司   版权所有</p>
+						<p style="color: #A2AEBF">Copyright © 2021-2031 Tencent. All Rights Reserved</p>
+					</view>
+				</view>
 			</scroll-view>
 		</view>
 	</view>
@@ -254,6 +262,13 @@
 			}
 		}
 		
-
+		.content-about {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-content: center;
+		}
 	}
 </style>

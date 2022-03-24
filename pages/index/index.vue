@@ -21,16 +21,16 @@
 				<text class="msg_text">您有预警信息待查看</text>
 			</view>
 			<view class="msg_right">
-				<icon class="iconfont iconzuojiantou" style="font-size: 30rpx;transform: rotate(180deg);margin-top: 20rpx;"></icon>
+				<icon class="iconfont iconzuojiantou" style="font-size: 30rpx;transform: rotate(180deg);margin-top: 20rpx;margin-right: 20rpx;"></icon>
 			</view>
 		</view>
 		<scroll-view :style="{height:scrollerHeight}" scroll-y="auto">
 			<view class="main" style="background: #fff;">
 				<view class="menu_list">
-					<view class="menu_item menu_item01" @click="rhhs()" v-if="menuList.includes('20211013092753828A20200000053701')">
+					<view class="menu_item menu_item01" @click="rhhs()" v-if="menuList.includes('20211013092753828A20200000053706')">
 						<text class="menu_h3">入户核实</text>
 					</view>
-					<view class="menu_item menu_item02" @click="srjc()" v-if="menuList.includes('20211013092753828A20200000053704')">
+					<view class="menu_item menu_item02" @click="srjc()" v-if="menuList.includes('20211013092753828A20200000053706')">
 						<text class="menu_h3">户信息查询</text>
 					</view>
 					<view class="menu_item menu_item03" @click="jcdx()" v-if="menuList.includes('20211013092753828A20200000053703')">
@@ -89,7 +89,7 @@
 						<image src="../../static/img/icons-arrow.png" mode="" style="width: 30rpx;height: 30rpx;"></image>
 					</view>
 				</view>
-				<view class="zfsb_box" @click="srjctj()" v-if="menuList.includes('20211013092753828A20200000053711')">
+				<view class="zfsb_box" @click="srjctj()" v-if="menuList.includes('20211013092753828A20200000053710')">
 					<view class="tabview_left">
 						<image src="../../static/img/list05.png" style="width: 100rpx;height: 100rpx;margin-right: 26rpx;"></image>
 						<view class="tab_left">
@@ -100,7 +100,7 @@
 						<image src="../../static/img/icons-arrow.png" mode="" style="width: 30rpx;height: 30rpx;"></image>
 					</view>
 				</view>
-				<view class="zfsb_box" @click="srjctj()" v-if="menuList.includes('20211013092753828A20200000053711')">
+				<view class="zfsb_box" @click="srjctj()" v-if="menuList.includes('20211013092753828A20200000053710')">
 					<view class="tabview_left">
 						<image src="../../static/img/list06.png" style="width: 100rpx;height: 100rpx;margin-right: 26rpx;"></image>
 						<view class="tab_left">
@@ -814,7 +814,6 @@
 		font-size: 32rpx;
 		position: relative;
 		margin-bottom: 20rpx;
-		box-shadow: 0px -0.5px rgba(243, 244, 246, 1) inset;
 		color: rgb(38, 51, 67);
 
 		&::after {

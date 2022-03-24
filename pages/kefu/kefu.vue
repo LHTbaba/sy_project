@@ -8,17 +8,39 @@
 
 				<view class="ms_list" :key='index'>
 					<view class="ms_item" style="margin-top: 30rpx;">
-						<image src="../../static/img/kefu.png" style="width: 80rpx;height: 80rpx;margin-right: 30rpx;" mode=""></image>
-						<view class="ms_right">
-							<view class="text" style="color: #555;margin-bottom:10rpx;">客服热线</view>
-							<view class="nums" style="color: #555;"> 4008-717-228 </view>
+						<view class="item-left">
+							<image src="../../static/img/kefu.png" style="width: 80rpx;height: 80rpx;margin-right: 30rpx;" mode=""></image>
+							<view class="ms_right">
+								<view class="text" style="color: #555;margin-bottom:10rpx;font-weight:bold">客服热线</view>
+								<view class="nums" style="color: #555;"> 4008-717-228 </view>
+							</view>
+						</view>
+						<view>
+							<image src="../../static/img/phone.png" style="width: 60rpx;height: 60rpx;margin-right: 30rpx;" mode=""></image>
 						</view>
 					</view>
 					<view class="ms_item" style="margin-top: 30rpx;">
-						<image src="../../static/img/qq.png" mode="" style="width: 80rpx;height: 80rpx;margin-right: 30rpx;"></image>
-						<view class="ms_right">
-							<view class="text" style="color: #555;margin-bottom:10rpx;">QQ客服</view>
-							<view class="nums" style="color: #555;"> 3088745873 </view>
+						<view class="item-left">
+							<image src="../../static/img/jishu.png" style="width: 80rpx;height: 80rpx;margin-right: 30rpx;" mode=""></image>
+							<view class="ms_right">
+								<view class="text" style="color: #555;margin-bottom:10rpx;font-weight:bold">技术热线</view>
+								<view class="nums" style="color: #555;"> 4008-931-081 </view>
+							</view>
+						</view>
+						<view>
+							<image src="../../static/img/phone.png" style="width: 60rpx;height: 60rpx;margin-right: 30rpx;" mode=""></image>
+						</view>
+					</view>
+					<view class="ms_item" style="margin-top: 30rpx;">
+						<view class="item-left">
+							<image src="../../static/img/qq.png" mode="" style="width: 80rpx;height: 80rpx;margin-right: 30rpx;"></image>
+							<view class="ms_right">
+								<view class="text" style="color: #555;margin-bottom:10rpx;font-weight:bold">在线服务</view>
+								<view class="nums" style="color: #555;"> 25483324123 </view>
+							</view>
+						</view>
+						<view>
+							<image src="../../static/img/qq2.png" style="width: 80rpx;height: 80rpx;margin-right: 20rpx;" mode=""></image>
 						</view>
 					</view>
 				</view>
@@ -408,6 +430,10 @@
 			display: flex;
 			box-shadow: 0px 0.5px 2px 0px rgba(96, 99, 103, .18);
 			align-items: center;
+			justify-content: space-between;
+			.item-left {
+				display: flex;
+			}
 		}
 	}
 

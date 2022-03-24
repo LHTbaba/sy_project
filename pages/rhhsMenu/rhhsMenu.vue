@@ -5,29 +5,26 @@
 		</uni-header> 
 		<scroll-view :style="{height:scrollerHeight}" scroll-y="auto">
 			<view class="main" style="background: #fff;"> 
-				<view class="zfsb_box" @click="sjhs()">
+				<view class="zfsb_box" style="background: url('../../static/img/shengji_back.png') no-repeat center/cover;" @click="sjhs()">
 					<view class="tabview_left">
-						<image src="../../static/img/sbtj.png" style="width: 100rpx;height: 100rpx;margin-right: 26rpx;"></image>
 						<view class="tab_left">
 							<text class="strong_title">(省级)入户核实</text>
 							<text class="hui_title">省级平台下发核实农户</text>
 						</view>
 					</view>
 					<view class="tabview_right">
-						<image src="../../static/img/icons-arrow.png" mode="" style="width: 30rpx;height: 30rpx;"></image>
+						<view class="button">点击查看</view>
 					</view>
 				</view>
-				<view class="zfsb_box" @click="xjhs()">
+				<view class="zfsb_box" style="background: url('../../static/img/xianji_back.png') no-repeat center/cover;" @click="xjhs()">
 					<view class="tabview_left">
-						<image src="../../static/img/hstj.png" style="width: 100rpx;height: 100rpx;margin-right: 26rpx;"></image>
 						<view class="tab_left">
 							<text class="strong_title">(县级)入户核实</text>
 							<text class="hui_title">县级平台下发核实农户</text>
 						</view>
 					</view>
 					<view class="tabview_right">
-						<!-- <text class="sh_num" v-if="shNums>0">{{shNums}}</text> -->
-						<image src="../../static/img/icons-arrow.png" mode="" style="width: 30rpx;height: 30rpx;"></image>
+						<view class="button">点击查看</view>
 					</view>
 				</view>
 				 
@@ -318,12 +315,9 @@
 		}
 
 		.zfsb_box {
-			position: relative;
-			z-index: 2;
-			background: #fff;
-			padding: 50rpx 30rpx;
-			border-radius: 16rpx;
-			overflow: hidden;
+			width: 98%;
+			height: 180rpx;
+			border-radius: 30rpx;
 			display: flex;
 			margin-bottom: 30rpx;
 			justify-content: space-between;
@@ -336,7 +330,8 @@
 			.tabview_left {
 				display: flex;
 				align-items: center;
-
+				padding-left: 150rpx;
+				color: #FFFFFF;
 				.tab_left {
 					display: flex;
 					flex-direction: column;
@@ -345,11 +340,9 @@
 						font-size: 32rpx;
 						font-weight: bold;
 						margin-bottom: 10rpx;
-						color: #424242;
 					}
 
 					.hui_title {
-						color: #bfbfbf;
 						font-size: 28rpx;
 					}
 				}
@@ -358,6 +351,17 @@
 			.tabview_right {
 				display: flex;
 				align-items: center;
+				.button {
+					width: 120rpx;
+					margin-right: 50rpx;
+					font-size: 20rpx;
+					line-height: 45rpx;
+					border-radius: 24rpx;
+					color: #FFFFFF;
+					background: #F7A539;
+					border: 1rpx solid #FFFFFF;
+					text-align: center;
+				}
 			}
 		}
 	}

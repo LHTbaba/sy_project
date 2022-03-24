@@ -55,7 +55,7 @@
 					</view>
 					<view class="user_card" @click="jszc()">
 						<view class="user_card_left">
-							<image src="../../static/img/jishu.png" style="width: 32rpx;height: 32rpx;margin-right: 20rpx;" mode=""></image>技术支持
+							<image src="../../static/img/jishuzhichi.png" style="width: 32rpx;height: 32rpx;margin-right: 20rpx;" mode=""></image>技术支持
 						</view>
 						<view class="user_card_right">
 							<icon class="iconfont iconzuojiantou" slot="header_left" style="font-size: 32rpx;transform: rotate(180deg);color: #9E9FA4;margin-top: 20rpx;"></icon>
