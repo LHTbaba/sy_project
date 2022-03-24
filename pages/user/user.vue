@@ -340,7 +340,7 @@
 									uni.removeStorageSync('cardBool');
 									setTimeout(function() {
 										uni.reLaunch({
-											url: '/pages/people/people',
+											url: '/pages/login/login',
 										});
 									}, 1000)
 								}

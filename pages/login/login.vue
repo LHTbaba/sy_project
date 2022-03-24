@@ -115,11 +115,11 @@
 				query.select('#wrap').boundingClientRect(data => {
 					_this.scrollerHeight = data.height;
 				}).exec(); 
-				_this.$nextTick(function() {
-					query.select('#header').boundingClientRect(data => {
-						_this.scrollerHeight = (_this.scrollerHeight - data.height) + 'px';
-					}).exec();
-				});
+				// _this.$nextTick(function() {
+				// 	query.select('#header').boundingClientRect(data => {
+				// 		_this.scrollerHeight = (_this.scrollerHeight - data.height) + 'px';
+				// 	}).exec();
+				// });
 			},
 			getUser(){
 				var _this=this;

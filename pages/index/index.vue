@@ -16,15 +16,15 @@
 				{{weather}}
 			</view>
 		</view>
-		<view class="msg_box" id="msg_box" @click="toMsg()">
-			<view class="msg_left">
-				<text class="msg_text">您有预警信息待查看</text>
-			</view>
-			<view class="msg_right">
-				<icon class="iconfont iconzuojiantou" style="font-size: 30rpx;transform: rotate(180deg);margin-top: 20rpx;margin-right: 20rpx;"></icon>
-			</view>
-		</view>
 		<scroll-view :style="{height:scrollerHeight}" scroll-y="auto">
+			<view class="msg_box" id="msg_box" @click="toMsg()">
+				<view class="msg_left">
+					<text class="msg_text">您有预警信息待查看</text>
+				</view>
+				<view class="msg_right">
+					<icon class="iconfont iconzuojiantou" style="font-size: 30rpx;transform: rotate(180deg);margin-top: 20rpx;margin-right: 20rpx;"></icon>
+				</view>
+			</view>
 			<view class="main" style="background: #fff;">
 				<view class="menu_list">
 					<view class="menu_item menu_item01" @click="rhhs()" v-if="menuList.includes('20211013092753828A20200000053706')">
@@ -288,11 +288,11 @@
 						_this.scrollerHeight = _this.scrollerHeight - data.height - _this.$store.state.barHeight;
 					}).exec();
 				});
-				_this.$nextTick(function() {
-					query.select('#msg_box').boundingClientRect(data => {
-						_this.scrollerHeight = _this.scrollerHeight - data.height;
-					}).exec();
-				});
+				// _this.$nextTick(function() {
+				// 	query.select('#msg_box').boundingClientRect(data => {
+				// 		_this.scrollerHeight = _this.scrollerHeight - data.height;
+				// 	}).exec();
+				// });
 				_this.$nextTick(function() {
 					query.select('#admin_box').boundingClientRect(data => {
 						_this.scrollerHeight = _this.scrollerHeight - data.height;
@@ -865,28 +865,6 @@
 		}
 	}
 
-	.msg_box {
-		width: 90%;
-		box-sizing: border-box;
-		margin: 30rpx auto;
-		background: url('../../static/img/msg_box.png') no-repeat center/cover;
-		height: 65rpx;
-		color: #333333;
-		font-family: HappyZcool-2016;
-		display: flex;
-		font-size: 30rpx;
-		justify-content: space-between;
-		align-items: center;
-		.msg_left {
-			margin-left: 100rpx;
-			font-size: 24rpx;
-			color: #F58F33;
-		}
-		.msg_right {
-			font-size: 26rpx;
-			color: #F58F33;
-		}
-	}
 
 	.admin_box {
 		width: 100%;
@@ -924,10 +902,32 @@
 		display: flex;
 		align-items: center;
 	}
-
+	
+	.msg_box {
+		width: 90%;
+		box-sizing: border-box;
+		margin: 30rpx auto;
+		background: url('../../static/img/msg_box.png') no-repeat center/cover;
+		height: 65rpx;
+		color: #333333;
+		font-family: HappyZcool-2016;
+		display: flex;
+		font-size: 30rpx;
+		justify-content: space-between;
+		align-items: center;
+		.msg_left {
+			margin-left: 100rpx;
+			font-size: 24rpx;
+			color: #F58F33;
+		}
+		.msg_right {
+			font-size: 26rpx;
+			color: #F58F33;
+		}
+	}
 	.main {
-		padding: 30rpx;
-
+		padding: 0 30rpx;
+		
 		.top_title {
 			width: 100%;
 			height: 300rpx;

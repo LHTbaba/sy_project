@@ -10,7 +10,7 @@
 						 
 						<view class="textArea_box">
 							<textarea style="width: 100%;height: 200rpx;border: none;font-size: 30rpx;" maxlength="200" placeholder="请输入反馈内容"
-							 v-model="textArea" @input="descInput"></textarea>
+							 v-model="textArea"></textarea>
 							<view class="" style="text-align: right;font-size: 24rpx;color: #999;padding-right: 10rpx;margin-bottom: 10rpx;">
 								{{textArea.length}}/200
 							</view>
